@@ -31,6 +31,18 @@ export default function Body() {
   }
 
   function handleSubmit(){
+    if(parseInt(amount) > 0){
+      setHistory({
+        Income: [...history.Income, amount],
+        Expense: [...history.Expense]
+      });
+    }
+    else{
+      setHistory({
+        Income: [...history.Income],
+        Expense: [...history.Expense, amount]
+      });
+    }
     setSaldo(saldo + parseInt(amount));
     setAmount(0);
   }
@@ -76,7 +88,7 @@ export default function Body() {
           Add Expense
         </Button>
       </Box>
-      <History />
+      <History history={history} />
     </Flex>
   );
 }

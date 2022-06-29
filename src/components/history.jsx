@@ -12,7 +12,7 @@ import {
   TabPanels,
 } from "@chakra-ui/react";
 
-export default function History() {
+export default function History(props) {
   return (
     <Flex className="container-history" direction="column">
       <Box className="total" color='whiteAlpha.800'>
