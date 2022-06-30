@@ -87,6 +87,7 @@ export default function Body() {
             borderRadius="30px"
             width="120px"
             bg="#9CB4CC"
+            _hover={{ color: "blackAlpha.00", bg: "whiteAlpha.800" }}
 
           >
             {buttonActive ? "Add" : "Close"}
