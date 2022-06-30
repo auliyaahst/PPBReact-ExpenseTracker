@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <Box className="container-header" width="350px">
       <Heading fontSize="2xl" textAlign="left" mb="25px">
-        Expense Tracker
+        OwL Expense
       </Heading>
     </Box>
   );
