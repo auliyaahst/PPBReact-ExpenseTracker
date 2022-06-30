@@ -70,6 +70,7 @@ export default function Body() {
     if (!parseInt(amount)) {
     } else {
       handleSubmit();
+      e.target.reset();
     }
   }
 
@@ -85,7 +86,6 @@ export default function Body() {
         width="350px"
         height="80px"
         justifyContent="center"
-        // gap="5px"
         bg="#F0EBE3"
         borderRadius="10px"
       >
@@ -107,7 +107,7 @@ export default function Body() {
           <Box
             p="40px"
             color="white"
-            mt="4"
+            mt="10px"
             bgGradient="linear(to-l, #525252, #3d72b4)"
             rounded="md"
             shadow="md"
