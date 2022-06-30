@@ -1,10 +1,12 @@
 import React from "react";
-import { Heading } from "@chakra-ui/react";
+import { Heading, Box } from "@chakra-ui/react";
 
 export default function Header() {
   return (
-    <Heading fontSize="xl" color="whiteAlpha.800" textAlign="center">
-      Expense Tracker
-    </Heading>
+    <Box className="container-header" width="350px">
+      <Heading fontSize="2xl" textAlign="left" mb="25px">
+        Expense Tracker
+      </Heading>
+    </Box>
   );
 }

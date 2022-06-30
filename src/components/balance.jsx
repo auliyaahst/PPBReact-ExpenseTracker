@@ -4,16 +4,20 @@ import { Flex, Box, Text, Heading } from "@chakra-ui/react";
 
 export default function Balance(props) {
   return (
-    <Flex
+    <Box
       className="container-balance"
       justifyContent="center"
       alignContent="center"
-      textAlign="center"
+      textAlign="left"
+      width="200px"
+      marginLeft="5px"
+      display="flex"
+      flexDirection="column"
     >
-      <Box className="box-balance" color="whiteAlpha.800">
-        <Heading>Balance</Heading>
-        <Text>${props.saldo}</Text>
-      </Box>
-    </Flex>
+      <Heading fontSize="xl" fontWeight="normal">
+        My Balance
+      </Heading>
+      <Text fontWeight="bold">${props.saldo}</Text>
+    </Box>
   );
 }

@@ -7,7 +7,7 @@ import { Flex } from "@chakra-ui/react";
 function App() {
   return (
     <Flex
-      bg="blue.900"
+      bg="white"
       h="100vh"
       justifyContent="center"
       alignItems="center"
