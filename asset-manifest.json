@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/PPBReact-ExpenseTracker/static/css/main.31d6cfe0.css",
+    "main.js": "/PPBReact-ExpenseTracker/static/js/main.c0cbb042.js",
+    "index.html": "/PPBReact-ExpenseTracker/index.html",
+    "main.c0cbb042.js.map": "/PPBReact-ExpenseTracker/static/js/main.c0cbb042.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.c0cbb042.js"
+  ]
+}
