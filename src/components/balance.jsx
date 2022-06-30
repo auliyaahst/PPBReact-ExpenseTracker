@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Flex, Box, Text, Heading } from "@chakra-ui/react";
+import { Box, Text, Heading } from "@chakra-ui/react";
 
 export default function Balance(props) {
   return (

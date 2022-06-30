@@ -5,11 +5,6 @@ import {
   Box,
   Text,
   Heading,
-  Tab,
-  Tabs,
-  TabList,
-  TabPanel,
-  TabPanels,
   useColorModeValue,
   useDisclosure,
   Button,
@@ -118,37 +113,6 @@ export default function History(props) {
           </DrawerContent>
         </Drawer>
       </Box>
-      {/* <Box
-        className="box-history"
-        color="whiteAlpha.800"
-        width="300px"
-        my="15px"
-      >
-        <Tabs
-          isFitted
-          variant="enclosed"
-          onChange={(index) => setTabIndex(index)}
-          bg={bg}
-          borderRadius="10px"
-        >
-          <TabList mb="1em">
-            <Tab>Earned</Tab>
-            <Tab>Spent</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              {props.history.Income.map((data) => (
-                <Text>${data}</Text>
-              ))}
-            </TabPanel>
-            <TabPanel>
-              {props.history.Expense.map((data) => (
-                <Text>${Math.abs(data)}</Text>
-              ))}
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Box> */}
     </Flex>
   );
 }
