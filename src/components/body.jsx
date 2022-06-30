@@ -36,11 +36,19 @@ export default function Body() {
         Income: [...history.Income, amount],
         Expense: [...history.Expense]
       });
+      setTotal({
+        Earned: total.Earned + parseInt(amount),
+        Spent: total.Spent
+      });
     }
     else{
       setHistory({
         Income: [...history.Income],
         Expense: [...history.Expense, amount]
+      });
+      setTotal({
+        Earned: total.Earned,
+        Spent: total.Spent + parseInt(amount)
       });
     }
     setSaldo(saldo + parseInt(amount));
@@ -88,7 +96,7 @@ export default function Body() {
           Add Expense
         </Button>
       </Box>
-      <History history={history} />
+      <History total={total} history={history} />
     </Flex>
   );
 }

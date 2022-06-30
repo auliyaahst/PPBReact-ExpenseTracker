@@ -15,10 +15,10 @@ import {
 export default function History(props) {
   return (
     <Flex className="container-history" direction="column">
-      <Box className="total" color='whiteAlpha.800'>
+      <Box className="total" color="whiteAlpha.800">
         <Heading>CASH FLOW</Heading>
-        <Text>$0 Earned</Text>
-        <Text>$0 Spent</Text>
+        <Text>${props.total.Earned} Earned</Text>
+        <Text>${Math.abs(props.total.Spent)} Spent</Text>
       </Box>
       <Box
         className="box-history"
@@ -33,10 +33,14 @@ export default function History(props) {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <p>one!</p>
+              {props.history.Income.map((data) => (
+                <Text>${data}</Text>
+              ))}
             </TabPanel>
             <TabPanel>
-              <p>two!</p>
+            {props.history.Expense.map((data) => (
+                <Text>${Math.abs(data)}</Text>
+              ))}
             </TabPanel>
           </TabPanels>
         </Tabs>
